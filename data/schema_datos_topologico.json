@@ -1,0 +1,46 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "items": {
+        "properties": {
+            "component": {
+                "type": "string"
+            },
+            "records": {
+                "items": {
+                    "properties": {
+                        "Elevacion": {
+                            "type": "number"
+                        },
+                        "Latitud": {
+                            "type": "number"
+                        },
+                        "Longitud": {
+                            "type": "number"
+                        },
+                        "Odometro": {
+                            "type": "number"
+                        },
+                        "Station Location": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "Elevacion",
+                        "Latitud",
+                        "Longitud",
+                        "Odometro",
+                        "Station Location"
+                    ],
+                    "type": "object"
+                },
+                "type": "array"
+            }
+        },
+        "required": [
+            "component",
+            "records"
+        ],
+        "type": "object"
+    },
+    "type": "array"
+}
