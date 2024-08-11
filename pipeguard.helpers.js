@@ -1,5 +1,6 @@
 class ThingsBoardServiceWrapper {
     constructor(ctx) {
+        console.log('Constructor de la clase ThingsBoardServiceWrapper, ctx: ', ctx);
         this.ctx = ctx;
         this.$injector = ctx.$scope.$injector;
         this.assetService = this.$injector.get(ctx.servicesMap.get('assetService'));
