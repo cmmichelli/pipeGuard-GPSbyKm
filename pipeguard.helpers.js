@@ -7,7 +7,7 @@ class ThingsBoardServiceWrapper {
         this.deviceService = this.$injector.get(ctx.servicesMap.get('deviceService'));
         this.attributeService = this.$injector.get(ctx.servicesMap.get('attributeService'));
         this.telemetryService = this.$injector.get(ctx.servicesMap.get('telemetryWsService'));
-        this.broadcastService = this.$injector.get(self.ctx.servicesMap.get('broadcastService'));
+        this.broadcastService = this.$injector.get(ctx.servicesMap.get('broadcastService'));
 
         this.ductos = [];
         this.tramos = [];
