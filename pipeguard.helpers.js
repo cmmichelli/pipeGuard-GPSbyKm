@@ -366,3 +366,6 @@ function convertToTimestamp(dateString) {
 
     return timestamp;
 }
+
+// Exportar la clase para que pueda ser utilizada en otros archivos
+export default ThingsBoardServiceWrapper;
